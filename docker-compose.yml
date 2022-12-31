@@ -1,0 +1,9 @@
+services:
+  dryer-lint:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: .
+        target: /app

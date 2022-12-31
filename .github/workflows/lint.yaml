@@ -1,0 +1,17 @@
+name: Lint
+on:
+  push:
+
+jobs:
+  test:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: docker compose build
+
+      - name: Run linter
+        run: docker compose run dryer-lint

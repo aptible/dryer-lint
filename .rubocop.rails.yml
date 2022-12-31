@@ -1,0 +1,15 @@
+require:
+  - rubocop-rails
+
+RSpec/Rails/AvoidSetupHook:
+  Enabled: true
+
+RSpec/Rails/HaveHttpStatus:
+  Enabled: true
+
+RSpec/Rails/InferredSpecType:
+  Enabled: true
+
+###############################################################################
+##                           Customizations                                  ##
+###############################################################################
