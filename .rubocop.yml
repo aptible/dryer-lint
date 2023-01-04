@@ -1,0 +1,13 @@
+inherit_from:
+  - .rubocop.base.yml
+  - .rubocop.rails.yml
+
+AllCops:
+  TargetRubyVersion: 3.1
+  NewCops: enable
+  Include:
+    - !ruby/regexp /\.rb$/
+    - !ruby/regexp /Gemfile$/
+    - !ruby/regexp /\.gemspec$/
+    - !ruby/regexp /\.rake$/
+    - !ruby/regexp /Rakefile$/
