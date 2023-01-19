@@ -232,6 +232,9 @@ RSpec/SortMetadata:
 RSpec/SubjectDeclaration:
   Enabled: true
 
+RSpec/StubbedMock:
+  Enabled: false
+
 RSpec/VerifiedDoubleReference:
   Enabled: true
 
