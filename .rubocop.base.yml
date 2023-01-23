@@ -133,6 +133,10 @@ Style/FileRead:
 Style/FileWrite:
   Enabled: true
 
+# TODO - remove this when this has been released on rubocop
+Style/GuardClause:
+  Enabled: false
+
 Style/HashConversion:
   Enabled: true
 
