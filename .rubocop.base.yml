@@ -343,6 +343,12 @@ Metrics/MethodLength:
   Enabled: true
   Max: 75
 
+# This probably isn't best to change either, but some modules and corresopnding
+# helpers will have a fair number of lines and this seems arbitrarily limiting
+Metrics/ModuleLength:
+  Enabled: true
+  Max: 200
+
 # We may want to re-enable this in the future with a reasonable value,
 # but right now this is overly prescriptive, especially in scenarios
 # where we have a lot of boilerplate code.
