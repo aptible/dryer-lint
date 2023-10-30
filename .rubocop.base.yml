@@ -242,7 +242,7 @@ RSpec/StubbedMock:
 RSpec/VerifiedDoubleReference:
   Enabled: true
 
-RSpec/Capybara/NegationMatcher:
+Capybara/NegationMatcher:
   Enabled: true
 
 RSpec/Capybara/SpecificActions:
@@ -254,10 +254,10 @@ RSpec/Capybara/SpecificFinders:
 RSpec/Capybara/SpecificMatcher:
   Enabled: true
 
-RSpec/FactoryBot/ConsistentParenthesesStyle:
+FactoryBot/ConsistentParenthesesStyle:
   Enabled: true
 
-RSpec/FactoryBot/SyntaxMethods:
+FactoryBot/SyntaxMethods:
   Enabled: true
 
 RSpec/Rails/AvoidSetupHook:
@@ -337,17 +337,15 @@ Naming/BlockForwarding:
   Enabled: true
   EnforcedStyle: explicit
 
-# This probably isn't right to increase, but at the same time, there
+# This probably isn't right to disable, but at the same time, there
 # are places where we're using (valid) boilerplate code that adds up.
 Metrics/MethodLength:
-  Enabled: true
-  Max: 75
+  Enabled: false
 
-# This probably isn't best to change either, but some modules and corresopnding
+# This probably isn't best to change either, but some modules and corresponding
 # helpers will have a fair number of lines and this seems arbitrarily limiting
 Metrics/ModuleLength:
-  Enabled: true
-  Max: 200
+  Enabled: false
 
 # We may want to re-enable this in the future with a reasonable value,
 # but right now this is overly prescriptive, especially in scenarios
@@ -366,4 +364,14 @@ RSpec/ContextWording:
 # This is allowing something implicit, which isn't ideal,
 # but it's also something we heavily leverage.
 RSpec/LetSetup:
+  Enabled: false
+
+# This doesn't feel great to add, but unfortunately it's making
+# incorrect assumptions about some of our function names
+# which causes a lot of false positives.
+RSpec/PredicateMatcher:
+  Enabled: false
+
+# There are valid reasons to do this.
+RSpec/InstanceVariable:
   Enabled: false
