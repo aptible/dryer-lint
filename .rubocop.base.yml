@@ -176,6 +176,9 @@ Style/NumberedParameters:
 Style/NumberedParametersLimit:
   Enabled: true
 
+Style/NumericLiterals:
+  Enabled: false
+
 Style/ObjectThen:
   Enabled: true
 
