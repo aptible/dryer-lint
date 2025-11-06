@@ -1,15 +1,14 @@
-require:
+plugins:
   - rubocop-rails
   - rubocop-capybara
-  - rubocop-rspec_rails
 
-RSpecRails/AvoidSetupHook:
+RSpec/Rails/AvoidSetupHook:
   Enabled: true
 
-RSpecRails/HaveHttpStatus:
+RSpec/Rails/HaveHttpStatus:
   Enabled: true
 
-RSpecRails/InferredSpecType:
+RSpec/Rails/InferredSpecType:
   Enabled: true
 
 ###############################################################################
