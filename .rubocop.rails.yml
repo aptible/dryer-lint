@@ -1,5 +1,7 @@
 require:
   - rubocop-rails
+  - rubocop-capybara
+  - rubocop-rspec_rails
 
 RSpecRails/AvoidSetupHook:
   Enabled: true
