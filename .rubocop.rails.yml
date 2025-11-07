@@ -1,6 +1,7 @@
 plugins:
   - rubocop-rails
-  - rubocop-capybara
+  - rubocop-rspec
+  - rubocop-rspec_rails
 
 RSpecRails/AvoidSetupHook:
   Enabled: true
