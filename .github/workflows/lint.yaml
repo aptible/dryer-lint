@@ -16,10 +16,10 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Build Docker image - ${{ matrix.respec_version }}
+      - name: Build Docker image
         working-directory: ${{ matrix.rspec_version == 'pre_rspec_3' && '.' || matrix.rspec_version }}
         run: make init
 
-      - name: Run linter - ${{ matrix.respec_version }}
+      - name: Run linter
         working-directory: ${{ matrix.rspec_version == 'pre_rspec_3' && '.' || matrix.rspec_version }}
         run: make rubocop

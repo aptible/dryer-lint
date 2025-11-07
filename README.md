@@ -37,6 +37,8 @@ inherit_from:
 ## Testing
 
 A Docker Compose configuration is included to make testing locally easier.
-To test, run `make init` once then `make rubocop`.
+To test, run `make init` once then `make rubocop`. The same commands work in the `rspec_3_plus/` directory as well.
 
 The GitHub Action for this repository mimics this behavior.
+
+You can also test on your system directly, without docker, with: `make local-bundle-install` and `make local-rubocop`
