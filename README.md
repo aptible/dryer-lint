@@ -37,6 +37,6 @@ inherit_from:
 ## Testing
 
 A Docker Compose configuration is included to make testing locally easier.
-To test, run `docker compose build --pull --no-cache && docker compose run rubocop`.
+To test, run `make init` once then `make rubocop`.
 
 The GitHub Action for this repository mimics this behavior.

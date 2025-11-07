@@ -13,5 +13,4 @@ AllCops:
     - !ruby/regexp /\.rake$/
     - !ruby/regexp /Rakefile$/
   Exclude:
-    # - 'rspec_3_plus/**/*'
     - '.ruby-lsp/**/*'
