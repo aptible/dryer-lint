@@ -2,6 +2,8 @@ name: Lint
 on:
   push:
 
+permissions: {}
+
 jobs:
   test:
     name: Lint
@@ -9,9 +11,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Build Docker image
-        run: docker compose build
+        run: make init
 
       - name: Run linter
-        run: docker compose run dryer-lint
+        run: make rubocop
