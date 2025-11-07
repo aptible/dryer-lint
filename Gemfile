@@ -4,9 +4,6 @@ source 'https://rubygems.org'
 
 ruby '~> 3.1'
 
-gem 'rubocop', '~> 1.81'
-gem 'rubocop-capybara', '~> 2.22'
-gem 'rubocop-factory_bot', '~> 2.27'
-gem 'rubocop-rails', '>= 2.33'
-gem 'rubocop-rspec', '~> 3.5'
-gem 'rubocop-rspec_rails', '~> 2.31'
+gem 'rubocop', '~> 1.41.1'
+gem 'rubocop-rails', '~> 2.17.4'
+gem 'rubocop-rspec', '~> 2.16.0'

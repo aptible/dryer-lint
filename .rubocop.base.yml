@@ -245,31 +245,31 @@ RSpec/StubbedMock:
 RSpec/VerifiedDoubleReference:
   Enabled: true
 
-Capybara/NegationMatcher:
+RSpec/Capybara/NegationMatcher:
   Enabled: true
 
-Capybara/SpecificActions:
+RSpec/Capybara/SpecificActions:
   Enabled: true
 
-Capybara/SpecificFinders:
+RSpec/Capybara/SpecificFinders:
   Enabled: true
 
-Capybara/SpecificMatcher:
+RSpec/Capybara/SpecificMatcher:
   Enabled: true
 
-FactoryBot/ConsistentParenthesesStyle:
+RSpec/FactoryBot/ConsistentParenthesesStyle:
   Enabled: true
 
-FactoryBot/SyntaxMethods:
+RSpec/FactoryBot/SyntaxMethods:
   Enabled: true
 
-RSpecRails/AvoidSetupHook:
+RSpec/Rails/AvoidSetupHook:
   Enabled: true
 
-RSpecRails/HaveHttpStatus:
+RSpec/Rails/HaveHttpStatus:
   Enabled: true
 
-RSpecRails/InferredSpecType:
+RSpec/Rails/InferredSpecType:
   Enabled: true
 
 ###############################################################################

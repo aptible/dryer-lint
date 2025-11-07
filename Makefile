@@ -19,7 +19,7 @@ bundle-install:
 
 # Run rubocop inside a container
 rubocop:
-	docker compose run dryer-lint rubocop
+	docker compose run dryer-lint rubocop -c .rubocop.yml $(ARGS)
 
 CMD ?= bash
 # Run an arbitrary command inside a container
@@ -33,3 +33,11 @@ down:
 # Turn down the containers and remove the volumes too!
 clean:
 	docker compose down --remove-orphans --volumes
+
+# Run bundle install locally
+local-bundle-install:
+	bundle install
+
+# Run bundle exec rubocop locally
+local-rubocop:
+	bundle exec rubocop -c .rubocop.yml $(ARGS)
