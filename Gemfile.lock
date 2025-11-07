@@ -62,6 +62,10 @@ GEM
     rubocop-rspec (3.7.0)
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
+    rubocop-rspec_rails (2.31.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
+      rubocop-rspec (~> 3.5)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
     tzinfo (2.0.6)
@@ -80,6 +84,7 @@ DEPENDENCIES
   rubocop-capybara (~> 2.22)
   rubocop-rails (>= 2.33)
   rubocop-rspec (~> 3.5)
+  rubocop-rspec_rails (~> 2.31)
 
 RUBY VERSION
    ruby 3.1.3p185
