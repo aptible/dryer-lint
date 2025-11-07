@@ -10,16 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        rspec_version: ['pre_3', '3_plus']
+        rspec_version: ['pre_rspec_3', 'rspec_3_plus']
     steps:
       - uses: actions/checkout@v3
         with:
           persist-credentials: false
 
       - name: Build Docker image - ${{ matrix.respec_version }}
-        working-directory: ${{ matrix.rspec_version == 'pre_3' && '.' || 'rspec_3_plus' }}
+        working-directory: ${{ matrix.rspec_version == 'pre_rspec_3' && '.' || matrix.rspec_version }}
         run: make init
 
       - name: Run linter - ${{ matrix.respec_version }}
-        working-directory: ${{ matrix.rspec_version == 'pre_3' && '.' || 'rspec_3_plus' }}
+        working-directory: ${{ matrix.rspec_version == 'pre_rspec_3' && '.' || matrix.rspec_version }}
         run: make rubocop
